@@ -1,0 +1,13 @@
+{
+  "name": "git-branch-manager",
+  "version": "1.0.0",
+  "description": "Ein einfaches Tool zur Verwaltung und Visualisierung von Git-Branches in Projekten.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "chalk": "^4.1.0"
+  }
+}
