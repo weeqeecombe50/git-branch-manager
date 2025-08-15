@@ -33,7 +33,8 @@ function mainMenu() {
         console.log(chalk.blue('Programm beendet.'));
         process.exit();
     }
-    // Zeige das Hauptmenü erneut
+  }).then(() => {
+    // Zeige das Hauptmenü erneut, nur wenn nicht beendet.
     mainMenu();
   });
 }
