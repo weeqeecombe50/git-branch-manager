@@ -15,7 +15,7 @@ function listBranches() {
   });
 }
 
-// Hauptmenü
+// Hauptmenü mit Auswahlmöglichkeiten für den Benutzer
 function mainMenu() {
   const questions = [{
     type: 'list',
@@ -24,6 +24,7 @@ function mainMenu() {
     choices: ['Branches auflisten', 'Beenden']
   }];
 
+  // Benutzerabfrage und weitere Aktionen basierend auf der Auswahl
   inquirer.prompt(questions).then((answers) => {
     switch (answers.action) {
       case 'Branches auflisten':
